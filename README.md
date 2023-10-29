@@ -16,7 +16,9 @@ You have the option to use either the local storage version or the server versio
 ## Usage
 
 Clone and install dependencies (For Front and back)  
-Start either json server(dependency of the front folder, with db.json file already set up) or Node server.  
+Start either json server(dependency of the react folder, with db.json file already set up) or Node server.  
+Json server:  
+npm run json-server (on react folder path)  
 
 Node server setup:  
 .env  
