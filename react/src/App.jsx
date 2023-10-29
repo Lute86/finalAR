@@ -16,8 +16,8 @@ function App() {
   
   function handleDarkMode() {
     setDarkMode(prevDarkMode => {
-      document.body.classList.add(!prevDarkMode ? 'dark-mode' : 'light-mode');
-      document.body.classList.remove(!prevDarkMode ? 'light-mode' : 'dark-mode');
+      document.getElementById('root').classList.add(!prevDarkMode ? 'dark-mode' : 'light-mode');
+      document.getElementById('root').classList.remove(!prevDarkMode ? 'light-mode' : 'dark-mode');
       return !prevDarkMode;
     });
   }
