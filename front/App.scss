@@ -1,0 +1,12 @@
+.choice-div{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+
+  .separator-p{
+    margin: 0 2rem;
+  }
+}
