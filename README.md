@@ -15,23 +15,23 @@ You have the option to use either the local storage version or the server versio
 
 ## Usage
 
--Clone and install dependencies (For Front and back)
--Start either json server(dependency of the front folder, with db.json file already set up) 
+- Clone and install dependencies (For Front and back)
+- Start either json server(dependency of the front folder, with db.json file already set up) 
 or 
 Node server.
 
-Node server setup:
- .env
-PORT=4001 =>matches the frontend url (can be changed)
-CORS=http://localhost:5173 => url to allow CORS, choose port accordingly
-DB_DATABASE= => db name
-DB_DIALECT=mysql
-DB_HOST=127.0.0.1
-DB_PASSWORD=
-DB_PORT=
-DB_USERNAME= 
-  Database: uses mySQL 
-Create db (workbench or chosen app) and fill .env info accordingly
+- Node server setup:
+- .env
+- PORT=4001 =>matches the frontend url (can be changed)
+- CORS=http://localhost:5173 => url to allow CORS, choose port accordingly
+- DB_DATABASE= => db name
+- DB_DIALECT=mysql
+- DB_HOST=127.0.0.1
+- DB_PASSWORD=
+- DB_PORT=
+- DB_USERNAME= 
+- Database: uses mySQL 
+- Create db (workbench or chosen app) and fill .env info accordingly
 
 
 ## Server Endpoints
