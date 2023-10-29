@@ -8,6 +8,18 @@ header{
   p{
     color: lightslategrey;
   }
+  .choice-div{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+  
+    .separator-p{
+      margin: 0 2rem;
+    }
+  }
 
   .choice-menu{
     cursor: pointer;
@@ -15,6 +27,5 @@ header{
   .local-choice, .server-choice{
     color: rgb(75, 75, 240);
     text-shadow:1px 1px 10px #fff, 0px 0px 1px #d40f0f;
-    
   }
 }

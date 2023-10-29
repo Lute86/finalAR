@@ -5,7 +5,6 @@ const AppContext = createContext();
 
 const AppProvider = ({children})=>{
 
-  //hooks serverless
   const [name, setName] = useState('')
   const [taskList, setTaskList] = useLocalStorage('task-list',[]);
   const [isEditing, setIsEditing] = useState(false)
