@@ -1,11 +1,42 @@
+//global
+$bg-light: lightgray;
+$bg-dark: #333;
+$bg-lightdark: #4242429a;
+$text-light: #fff;
+$text-dark: #333;
+$text-lightdark: grey;
+
+
+
 @import './App.scss';
-@import './components/Header.scss';
+@import './pages/index.pages.scss';
+@import './components/index.components.scss';
+
 
 body, html {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: lightgray;
+}
+
+:root{
+  background-color: $bg-light;
+}
+
+.dark-mode{
+  background-color: $bg-dark;
+  color: $text-light;
+  header, footer{
+    box-shadow: 0px 0px 25px $bg-light;
+  }
+}
+
+.light-mode{
+  background-color: $bg-light;
+  color: $text-dark;
+  header, footer{
+    box-shadow: 0px 0px 25px $bg-dark;
+  }
 }
 
 .app {
@@ -16,7 +47,7 @@ body, html {
   h1 {
     text-align: center;
     font-size: xx-large;
-    color: grey;
+    color: $text-lightdark;
     margin-top: 4rem;
     padding: 0;
   }
@@ -28,13 +59,13 @@ body, html {
 }
 
 header, footer {
-  background-color: #333;
-  color: #fff;
+  background-color: $bg-dark;
+  color: $text-light;
   height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
-  box-shadow: 0px 0px 25px black;
+  //box-shadow: 0px 0px 25px $bg-light;
 }
