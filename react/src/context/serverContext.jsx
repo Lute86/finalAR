@@ -139,14 +139,17 @@ const AppProviderServer = ({ children }) => {
     setIsEditing(false);
   }
   //Click borrar tarea
-  function handleDeleteServer(id) {
-    deleteTask(id);
+  async function handleDeleteServer(id) {
+    await deleteTask(id);
     setTaskModified(!taskModified);
   }
   //Click Borrar Todas
-  function handleDeleteAllServer() {
-    deleteAllTasks();
-    setTaskModified(!taskModified);
+  async function handleDeleteAllServer() {
+    const isConfirmed = window.confirm("Seguro que quieres borrar todo?")
+    if(isConfirmed){
+      await deleteAllTasks();
+      setTaskModified(!taskModified);
+    }
   }
   //Reset de los estados globales
   function reset() {
