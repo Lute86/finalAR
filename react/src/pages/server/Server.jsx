@@ -28,8 +28,11 @@ function Server() {
     reset();
     //Armar la lista
     fetchTasks();
-    pingJson();
   }, [taskModified]);
+
+  useEffect(()=>{
+    pingJson();
+  },[])
 
   return (
     <section className="server-container">
