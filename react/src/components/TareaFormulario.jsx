@@ -15,7 +15,7 @@ function TareaFormulario({
   handleTask,
 }) {
   
-  const { name, setName, isEditing } = useGlobalState();
+  const { name, setName, isEditing, alert } = useGlobalState();
   const inputRef = useRef(null);
 
   return (
@@ -33,6 +33,7 @@ function TareaFormulario({
           <LuSendHorizonal />
         </button>
       </div>
+      {alert.show && <p className={`${alert.type}-msg`}>{alert.msg}</p>}
       {/* Llamar a ListaTareas segun la necesidad, lista completa o lista a editar */}
       {!isEditing && (
         <ListaTareas

@@ -1,12 +1,23 @@
-.choice-div{
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: 100%;
-  justify-content: center;
-  margin: 0;
+.dark-toggle{
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
 
-  .separator-p{
-    margin: 0 2rem;
+  .icons-view{
+    height: 1.3rem;
+    width: 1.3rem;
+    color: white;
+    cursor: pointer;
+  }
+  @media(max-width:486px){
+    top:7rem;
+    right: 50vw;
+    height: 0.5rem;
+    width: 0.5rem;
+
+    .icon-moon{
+      color: black;
+    }
   }
 }
+
