@@ -2,12 +2,12 @@
   "tasks": [
     {
       "name": "Tarea 1",
-      "completed": false,
+      "completed": 1,
       "id": 1
     },
     {
       "name": "Tarea 2",
-      "completed": 1,
+      "completed": false,
       "id": 2
     }
   ],
