@@ -100,7 +100,7 @@ export class TaskModel {
         throw new Error()
       }
     
-      // Task was successfully deleted, you can return any desired response
+      // Tasks were successfully deleted, you can return any desired response
       return { message: 'Task deleted successfully' };
     } catch (error) {
       return {status:404, message:"Couldn't find the desired id"}
